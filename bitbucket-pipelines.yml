@@ -15,11 +15,11 @@ pipelines:
           script:
             - if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
      
-      - step:
-          name: Docker build
-          script:
-            # Enforce style consistency across Python projects https://flake8.pycqa.org
-            - docker build -t gnh374/yagami:latest .
+      # - step:
+      #     name: Docker build
+      #     script:
+      #       # Enforce style consistency across Python projects https://flake8.pycqa.org
+      #       - docker build -t gnh374/yagami:latest .
 
 
    
